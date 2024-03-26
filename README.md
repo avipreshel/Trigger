@@ -3,7 +3,8 @@
 ***Trigger*** is the likely simplest, dummest-yet-fastest [IPC](https://en.wikipedia.org/wiki/Inter-process_communication) framework out there for dotnet "Core" (Dotnet v8.0 and up).
 
 The idea is simple: Take **Named Events**, and add payload upon event arrival. That's it.
-If ZeroMQ is said to be *sockets on steroids*, then Trigger is like *Named Events on steroids* :)
+
+If [ZeroMQ](https://zeromq.org) is said to be *sockets on steroids*, then Trigger is like *Named Events on steroids* :)
 
 *Trigger* basicaly enables to implement a simple pub-sub topology across same process or multiple processes running on the same host OS.
 
