@@ -42,6 +42,9 @@ static void RunPubSub()
 
 ```
 
+## How is it better than NetMQ pub-sub topology
+Far less boilerplate code. Also, NetMQ doesn't support named pipes, yet, and the [GitHub thread](https://github.com/zeromq/netmq/issues/331) is still open since 2015....
+
 ## How does A publisher works
 Publisher takes a struct DTO, copies it into a queue (which is located in a shared memory area) and then trigger a named event.
 Once the queue is filled, the publisher goes back and overwrites the first item, in a round-robin manner.
