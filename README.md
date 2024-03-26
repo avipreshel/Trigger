@@ -61,3 +61,10 @@ It means that **If clients are too slow, they might skip and miss incoming event
 Subscriber is mapping a named event to a callback. Under the hood there is a fixed thread waiting on the event. 
 Once an event is triggered, the thread reads the item from the queue (round robin manner) and then call to the provided callback (provided in the C'tor).
 If the callback is not trivial then the best practice is to let another thread handle the work, and "release" the calling thread.
+
+## Limitations
+* Works only in Windows (for now)
+* Supports only Structs without reference types
+
+# TODO
+* Add support for passing Strings and byte array
