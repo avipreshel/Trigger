@@ -3,6 +3,11 @@ using System.Runtime.InteropServices;
 
 namespace Trigger
 {
+    /// <summary>
+    /// This will create an instance of an event subscriber.
+    /// Once instane is created, the provided callback will immidiately start tapping the named event
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class TriggerSubscriber<T> : IDisposable where T : struct
     {
         public int HeaderSize { get; } = 4;

@@ -15,7 +15,7 @@ namespace Publisher
     {
         static void Main(string[] args)
         {
-            using var tp = TriggerPubisher<SomeDTO>.Create("SomeTriggerName", 10);
+            using var tp = TriggerPublisher<SomeDTO>.Create("SomeTriggerName", 10);
             CancellationTokenSource cts = new CancellationTokenSource();
 
             Task.Run(() =>

@@ -3,7 +3,11 @@ using System.Runtime.InteropServices;
 
 namespace Trigger
 {
-    public class TriggerPubisher<T> : IDisposable where T : struct
+    /// <summary>
+    /// This class will be used to publish DTO with events. It's like Named Event on steroids.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class TriggerPublisher<T> : IDisposable where T : struct
     {
         public int HeaderSize { get; } = 4;
         public string Name { get; private set; } = string.Empty;
@@ -13,11 +17,11 @@ namespace Trigger
         MemoryMappedViewAccessor? _accessor = null;
         EventWaitHandle? _evh = null;
         uint _currIndex = 0;
-        private TriggerPubisher() { }
+        private TriggerPublisher() { }
 
-        public static TriggerPubisher<T> Create(string name, uint queueSize)
+        public static TriggerPublisher<T> Create(string name, uint queueSize)
         {
-            var t = new TriggerPubisher<T>() { Name = name, QueueSize = queueSize, TSize = Marshal.SizeOf(typeof(T)) };
+            var t = new TriggerPublisher<T>() { Name = name, QueueSize = queueSize, TSize = Marshal.SizeOf(typeof(T)) };
             t._currIndex = queueSize - 1; // This will cause the first trigger to be 0-based
 #pragma warning disable CA1416 // supress warning about Windows-only compatability
             t._mmf = MemoryMappedFile.CreateOrOpen(name, t.TSize * queueSize + t.HeaderSize);
