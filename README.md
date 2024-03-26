@@ -9,8 +9,9 @@ If [ZeroMQ](https://zeromq.org) is claimed as *sockets on steroids*, then Trigge
 *Trigger* basicaly enables to implement a simple pub-sub topology across same process or multiple processes running on the same host OS.
 
 ## Why do you need it
-Named events are probably the fastest way to signal that something happened, however, sometime we not only want to signal that something happened, we are
-also interested to say what. Enter Trigger.
+Named Nvents (aka "Named Semaphores" in Linux) are probably the fastest way to signal that something happened over common OS's like Windows or Linux, 
+however, sometime we not only want to signal that something has happened, we are also interested to say WHAT happened. 
+Enter Trigger.
 
 ## Dependencies
 Dotnet 8.0 or later
