@@ -10,6 +10,7 @@ If [ZeroMQ](https://zeromq.org) is self proclaimed as *sockets on steroids*, the
 
 ## Why do you need it
 It's insanely fast.
+
 Named Nvents (aka "Named Semaphores" in Linux) are probably the fastest way to signal that something happened over common OS's like Windows or Linux, 
 however, sometime we not only want to signal that something has happened, we are also interested to say WHAT happened. 
 Enter Trigger.
