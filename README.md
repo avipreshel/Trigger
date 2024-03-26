@@ -13,6 +13,7 @@ It's insanely fast.
 
 Named Events (aka "Named Semaphores" in Linux) are probably the fastest way to signal-across-process that a certain event has happened, 
 however, sometime we not only want to signal that something has happened, we're also interested to say WHAT happened. 
+
 Enter Trigger.
 
 ## Dependencies
