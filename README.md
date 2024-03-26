@@ -4,7 +4,7 @@
 
 The idea is simple: Take **Named Events**, and add payload upon event arrival. That's it.
 
-If [ZeroMQ](https://zeromq.org) is claimed as *sockets on steroids*, then Trigger can be claimed as *Named Events on steroids* :)
+If [ZeroMQ](https://zeromq.org) is self proclaimed as *sockets on steroids*, then Trigger can be proclaimed as *Named Events on steroids* :)
 
 *Trigger* basicaly enables to implement a simple pub-sub topology across same process or multiple processes running on the same host OS.
 
