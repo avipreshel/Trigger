@@ -13,7 +13,7 @@ Dotnet 8.0 or later
 
 ## Supported OS
 * Windows: Yes (10 or later)
-* Linux: No (At least until DotNet will provide support for memory mapped files in Linux)
+* Linux: No (As long as DotNet doesn't provide out-of-the-box API for memory mapped files in Linux)
 
 ## Code Example
 ```
