@@ -1,6 +1,6 @@
 # Trigger
 
-***Trigger*** is the likely simplest, dummest-yet-fastest [IPC](https://en.wikipedia.org/wiki/Inter-process_communication) framework out there for dotnet "Core" (Dotnet v8.0 and up).
+***Trigger*** is the likely the simplest, dummest-yet-fastest [IPC](https://en.wikipedia.org/wiki/Inter-process_communication) framework out there for dotnet "Core" (Dotnet v8.0 and up).
 
 The idea is simple: Take **Named Events**, and add payload upon event arrival. That's it.
 
