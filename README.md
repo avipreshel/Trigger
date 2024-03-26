@@ -50,7 +50,7 @@ static void RunPubSub()
 ```
 
 ## What you should prefer it over NetMQ pub-sub topology
-If you're looking for a basic pub-sub topology and you only care about working in local host, then Trigger achieve better performance for FAR less boilerplate code compare to ZMQ. 
+If you're looking for a basic pub-sub topology and you only care about working in local host, then Trigger achieve better performance for FAR LESS boilerplate code compare to ZMQ. 
 Also, NetMQ doesn't support named pipes yet (the [GitHub thread](https://github.com/zeromq/netmq/issues/331) is still open since 2015) so Trigger is MUCH faster.
 
 ## How does A publisher works
