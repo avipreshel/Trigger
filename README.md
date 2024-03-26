@@ -47,8 +47,9 @@ static void RunPubSub()
 
 ```
 
-## How is it better than NetMQ pub-sub topology
-Far less boilerplate code. Also, NetMQ doesn't support named pipes, yet, and the [GitHub thread](https://github.com/zeromq/netmq/issues/331) is still open since 2015....
+## What you should prefer it over NetMQ pub-sub topology
+If you're looking for a basic pub-sub topology and you only care about working in local host, then Trigger achieve better performance for FAR less boilerplate code compare to ZMQ. 
+Also, NetMQ doesn't support named pipes yet (the [GitHub thread](https://github.com/zeromq/netmq/issues/331) is still open since 2015) so Trigger is MUCH faster.
 
 ## How does A publisher works
 Publisher takes a struct DTO, copies it into a queue (which is located in a shared memory area) and then trigger a named event.
