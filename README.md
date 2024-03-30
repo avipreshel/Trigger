@@ -9,12 +9,9 @@ If [ZeroMQ](https://zeromq.org) is self proclaimed as *sockets on steroids*, the
 *Trigger* basicaly enables to implement a simple pub-sub topology across same process or multiple processes running on the same host OS.
 
 ## Why do you need it
-It's insanely fast.
+It's as simple as it gets.
 
-Named Events (aka "Named Semaphores" in Linux) are probably the fastest way to signal-across-process that a certain event has happened, 
-however, sometime we not only want to signal that something has happened, we're also interested to say WHAT happened. 
-
-Enter Trigger.
+Named Events (aka "Named Semaphores" in Linux) are probably one of the simplest IPC invented, and adding payload on top of it just makes it much more useful.
 
 ## Dependencies
 Dotnet 8.0 or later
