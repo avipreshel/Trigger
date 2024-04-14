@@ -56,7 +56,7 @@ static void RunPubSub()
 ## How does A publisher works
 Publisher takes a struct DTO, copies it into a queue (which is located in a shared memory area) and then trigger a named event.
 Once the queue is filled, the publisher goes back and overwrites the first item, in a round-robin manner.
-It means that **If clients are too slow, they might skip and miss incoming events**
+It means that **if clients are too slow, they might skip and miss incoming events**
 
 ## How does A subscriber works
 Subscriber is mapping a named event to a callback. Under the hood there is a fixed thread waiting on the event. 
